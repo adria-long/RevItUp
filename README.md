@@ -1,124 +1,70 @@
-# YouJin(^-^)
+# Getting Started with Create React App
 
-YouJin utilizes **Llama** as the backend NLP integrated with a frontend chat interface. The coordinate system serves as a mechanism for the Bot to navigate and access data stored through a custom terminal interface. Additional features will be implemented in future updates to improve the Agent and terminal's functionality, allowing for more dynamic interactions, namely, the inclusion of an enhanced web scraper, making use of the Grover's search algorithm, and the implementation of Game theoretic algorithms to handle multiple user interactions.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Project Structure
-- **Frontend**: The interface/GUI for interacting with the Bot.
-- **Backend**: Powered by Llama as the NLP, handling AI processing and responses.
-- **Terminal**: Uses a coordinate system to manage data storage/retrieval and encryption of chats.
+## Available Scripts
 
-## Getting Started
+In the project directory, you can run:
 
-To set up and run the project on your local machine, follow the instructions below.
+### `npm start`
 
-### 1. Clone the Repository
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-First, clone the repository to your local machine:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-```bash
-git clone https://github.com/etvan13/YouJin.git
-cd YouJin
-```
+### `npm test`
 
-### 2. Set Up the Virtual Environment
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-To ensure all dependencies are installed in an isolated environment, set up a Python virtual environment:
+### `npm run build`
 
-#### a. Create the Virtual Environment:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- On **Windows**:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-    ```bash
-    python -m venv venv
-    ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- On **macOS/Linux**:
+### `npm run eject`
 
-    ```bash
-    python3 -m venv venv
-    ```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-#### b. Activate the Virtual Environment:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- On **Windows**:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-    ```bash
-    venv\Scripts\activate
-    ```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-- On **macOS/Linux**:
+## Learn More
 
-    ```bash
-    source venv/bin/activate
-    ```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### 3. Install Dependencies
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Once the virtual environment is activated, install the project dependencies using `requirements.txt`:
+### Code Splitting
 
-```bash
-pip install -r requirements.txt
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### 4. Running the Project
+### Analyzing the Bundle Size
 
-The project runs in two parts: the frontend (user interface) and the backend (API server). Follow the instructions below to run both.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-#### a. Start the Backend (Flask API):
+### Making a Progressive Web App
 
-1. Navigate to the `backend/` directory:
-    ```bash
-    cd backend
-    ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-2. Run the Flask server:
-    ```bash
-    python app.py
-    ```
+### Advanced Configuration
 
-This will start the backend server on http://localhost:5000. It will handle the AI logic and process the messages sent from the frontend.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
+### Deployment
 
-#### b. Start the Frontend (HTML/CSS/JavaScript)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-In a new terminal, do the following:
+### `npm run build` fails to minify
 
-1. Navigate to the frontend/ directory:
-
-    ```bash
-    cd frontend
-    ```
-
-2. Start the frontend server using Python's built-in HTTP server:
-
-    ```bash
-    python -m http.server 8000
-    ```
-
-This will serve the frontend on http://localhost:8000.
-
-
-### 5. Access the Chat Interface
-
-Once both servers are running, open your web browser and navigate to:
-
-```bash
-http://localhost:8000/
-```
-
-From here, you can interact with the chatbot via the user interface.
-
-* When you send a message from the frontend, it will be sent to the backend (running on http://localhost:5000).
-* The backend processes the message and responds, and the frontend updates the chat interface with the response.
-
-### 6. Deactivate the Virtual Environment (When Done)
-
-When you're done working on the project, deactivate the virtual environment:
-```bash
-deactivate
-```
-
-## Future Development
-
-* Backend Expansion: Future updates will include integration with Llama as the NLP, enhancement of web scraping capabilities with Grover's search algorithm, and possible implementation of Game Theory to handle interactions with multiple users.
-* Terminal Interface: The terminal will be enhanced with additional commands, enabling more efficient data navigation through the coordinate system.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
